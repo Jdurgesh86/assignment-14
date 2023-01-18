@@ -1,0 +1,18 @@
+/*Write a program to find the smallest number stored in an array of size 10. Take array
+values from the user.*/
+#include<stdio.h>
+int main()
+{
+    int arr[10],min=99999;
+    printf("Enter 10 numbers ");
+    for(int i=0;i<10;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<10;i++)
+    {
+        if(min>arr[i])
+            min=arr[i];
+    }
+    printf("The smallest number in the array is %d",min);
+}
